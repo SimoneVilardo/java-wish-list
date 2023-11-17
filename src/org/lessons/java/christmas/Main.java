@@ -69,6 +69,8 @@ public class Main {
 		
 		 System.out.print("Vuoi ordinare la lista per nome o per destinatario? ");
 	     String modoOrdinamento = in.nextLine();
+	     
+	     in.close();
 		
 	     if (modoOrdinamento.equals("nome")) {
 	            Collections.sort(listaRegali, Comparator.comparing(regalo -> regalo.getNome()));
